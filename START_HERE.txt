@@ -1,0 +1,12 @@
+ENGLISH: ZERO TO HERO — GITHUB READY
+
+1. EXTRACT the ZIP first.
+2. Upload ALL the extracted files AND the assets folder to your GitHub repository.
+3. Make sure index.html is on the FIRST page of the repository.
+4. Go to Settings > Pages.
+5. Choose Deploy from a branch > main > /(root) > Save.
+6. Open the website link GitHub displays there.
+
+Do not upload only the ZIP. Do not upload index.html alone.
+
+See README.md for full instructions and audio information.

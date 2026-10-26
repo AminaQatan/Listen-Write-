@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="theme-color" content="#1d6155">
+ <meta name="description" content="Little steps. A world of English. Learn with 36 guided lessons, listening games, friendly feedback, and an alphabet room.">
+ <title>English: Zero to Hero · Your learning adventure</title>
+ <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='25' fill='%231d6155'/%3E%3Ctext x='50' y='69' text-anchor='middle' font-size='60'%3E🌱%3C/text%3E%3C/svg%3E">
+ <link rel="stylesheet" href="style.css">
+ <script src="content.js" defer></script><script src="dictation.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+ <a class="skip" href="#main">Skip to learning</a>
+ <header class="topbar"><div class="header-inner">
+  <button class="brand" data-view="journey" aria-label="English Zero to Hero home"><span class="brand-mark">e<span>✦</span></span><span>English<span class="brand-sub">ZERO TO HERO</span></span></button>
+  <nav aria-label="Main navigation"><button data-view="dictation" class="nav-link">Listen &amp; write</button><button data-view="journey" class="nav-link active">My journey</button><button data-view="alphabet" class="nav-link">Alphabet room</button><button data-view="practice" class="nav-link">Practice</button></nav>
+  <div class="header-actions"><span class="xp-pill" id="xp">✦ 0 XP</span><button id="settings-button" class="icon-button" aria-label="Open sound and learning settings">⚙</button><button id="profile-button" class="avatar" aria-label="View my progress">A</button></div>
+ </div></header>
+ <main id="main" tabindex="-1"></main>
+ <footer><span class="footer-brand">A little practice. A little progress. Every day.</span><span>Created by Ms. Amina Qatan <span class="footer-dot">·</span> Learn at your own pace</span></footer>
+ <dialog id="settings"><form method="dialog"><div class="dialog-heading"><h2>Make it your own</h2><button class="icon-button" aria-label="Close settings">✕</button></div></form>
+  <p class="muted">Choose a comfortable way to learn.</p>
+  <label class="field-label" for="learner-name">Learner name</label><input id="learner-name" class="text-input" maxlength="30" placeholder="Your first name" autocomplete="given-name">
+  <label class="field-label" for="voice-select">Reading voice</label><select id="voice-select"></select><p class="small muted" id="voice-note">English voices come from your device. A British voice is preferred when available.</p>
+  <label class="field-label" for="speed">Reading speed <span id="speed-value">0.85×</span></label><input id="speed" type="range" min="0.55" max="1.1" step="0.05">
+  <label class="switch-row">Arabic hints <input id="arabic-setting" type="checkbox"></label>
+  <label class="switch-row">Gentle sound effects <input id="sound-setting" type="checkbox"></label>
+  <button id="test-voice" class="secondary full">♫ Try the voice</button><p class="small muted">Progress stays in this browser on this device. Speaking practice is self-assessed; the app does not record your voice.</p>
+  <button id="save-settings" class="primary full">Save my settings</button>
+ </dialog>
+ <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body></html>
